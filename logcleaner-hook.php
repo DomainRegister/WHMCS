@@ -6,7 +6,7 @@ use WHMCS\Database\Capsule;
 // various log garbage collection, done daily
 //
 // this script run daily, at a given hour you can define at your own in line 18, and remove from logs various unuseful stuff 
-// in line  to  you have various examples of queries to purge different logs:
+// in line 19 to 23 you have various examples of queries to purge different logs:
 // whoislog: removes every record oldest than 3 days
 // activitylog: removes "automated task starting", "Domain Sync Cron completed" and "Cron running" records oldest than 2 days
 // You can add further queries to clean other kind of logs, used by addon or registrar module (i.e. in rows 23 to 25 you have code examples to clean dns_manager2_log, useful only if
