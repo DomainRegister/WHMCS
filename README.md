@@ -1,10 +1,10 @@
-# WHMCS tools
+# WHMCS DomainRegister tools
 **Various WHMCS tools and scripts to make your life easier**
 
 ### [Logcleaner hook](https://github.com/DomainRegister/WHMCS/blob/master/logcleaner-hook.php)
 A hook that performs various log garbage collection, done daily
 
-This script run daily, at a given hour you can define at your own in line 18, and removes from logs various unuseful stuff 
+This script runs daily, at a given hour you can define at your own in line 18, and removes from logs various unuseful stuff 
 In line  19 to 23 you can find various examples of queries to purge different logs:
 - whoislog: removes every record oldest than 3 days
 - activitylog: removes "automated task starting", "Domain Sync Cron completed" and "Cron running" records oldest than 2 days
