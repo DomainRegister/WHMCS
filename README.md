@@ -14,3 +14,5 @@ you're using the DNS Manager Addon module by Modulesgarden.
 
 You can customize the number of days any kind of record is retained before deleting it (  strtotime('-2 days'),  strtotime('-3 days') , strtotime('-5 days') etc.)
 
+Further details about are available in [DomainRegister's knowledgebase](https://domainregister.international/index.php/knowledgebase/667/WHMCS---Automated-Log-Cleaning-Hook.html).
+
