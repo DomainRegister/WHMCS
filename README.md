@@ -1,6 +1,14 @@
 # WHMCS DomainRegister tools
 **Various WHMCS tools and scripts to make your life easier**
 
+### [Check user data hook](https://github.com/DomainRegister/WHMCS/blob/master/checkuser.php)
+A hook that checks user data, in order to prevent the user from registering or later editing his data using:
+- fake or disposable email addresses (using https://www.mailcheck.ai/ free API service)
+- special characters
+- too long strings
+
+Further details about are available in [DomainRegister's knowledgebase](https://domainregister.international/index.php/knowledgebase/696/Check-User-Data-for-Better-WHMCS-Security.html).
+
 ### [Logcleaner hook](https://github.com/DomainRegister/WHMCS/blob/master/logcleaner-hook.php)
 A hook that performs various log garbage collection, done daily
 
