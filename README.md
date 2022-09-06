@@ -1,3 +1,5 @@
+![DomainRegister logo](https://domainregister.international/templates/dr3/assets/images/dr-logo.svg)
+
 # WHMCS DomainRegister tools
 **Various WHMCS tools and scripts to make your life easier**
 
