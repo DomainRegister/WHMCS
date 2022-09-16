@@ -24,6 +24,11 @@ function checkuserdata($vars) {
     $email = $vars['email'];
     $elements = ['firstname','lastname','companyname','address1','address2','city','state','postcode','country','phonenumber','tax_id'];
     $usererrors = [];
+    
+    // chesk disabled if operation is done in admin area
+    if ($_SERVER['SCRIPT_NAME']=='/admin/clientsprofile.php'){
+        return;
+    }  
   
     foreach($elements as $element){
         if (checkstring($vars[$element])){
