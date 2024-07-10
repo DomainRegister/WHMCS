@@ -28,7 +28,13 @@ function checkuserdata($vars) {
     // chesk disabled if operation is done in admin area
     if ($_SERVER['SCRIPT_NAME']=='/admin/clientsprofile.php'){
         return;
+    }
+
+// prevent registrations coming from the USA. You can edit this command in order to extend the mechanism to other specific countries    
+    if ($vars['country']=='US'){
+        array_push($usererrors, "Sorry, for safety reasons no registration is allowed from USA: please <a href='/contact.php'>contact us</a> for further details.");
     }  
+
   
     foreach($elements as $element){
         if (checkstring($vars[$element])){
